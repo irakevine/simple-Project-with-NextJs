@@ -1,24 +1,16 @@
-import Footer from '@/Componet/Footer'
-import Navbar from '@/Componet/navbar'
 import Head from 'next/head'
 import Link from 'next/link'
-// import Image from 'next/image'
-// import { Inter } from 'next/font/google'
-// import styles from '@/styles/Home.module.css'
-
-// const inter = Inter({ subsets: ['latin'] })
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div>
-     
-      <h1>Hello world </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel tellus vitae ex tempor dapibus quis feugiat dolor. Proin at pulvinar lorem. Nunc at sapien iaculis, hendrerit quam eu, luctus mauris. Aenean faucibus justo nisi. Quisque eu lobortis ex. Donec pulvinar, est ac facilisis malesuada, velit diam lobortis dui,</p>
-
-    <Link href="/txen">
-     see Txen listing 
-    </Link>
- 
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
+      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
+      <Link href="/txen">
+        <div className={styles.btn}>See Ninja Listing</div >
+      </Link>
     </div>
-  );
+  )
 }

@@ -1,8 +1,8 @@
 const Footer = () => {
     return ( 
-        <div>
+        <footer>
             copyright 2023 Txen List
-        </div>
+        </footer>
      );
 }
  
