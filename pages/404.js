@@ -1,12 +1,14 @@
 import Link from 'next/link'
-const Notfound = () => {
-    return ( 
-        <div className="not-found">
-<h1>OoOoOoOops....</h1>
-<h2>that page can not found.</h2>
-<p>go back to the <Link href="/"><a>HomePage</a></Link></p>
-        </div>
-     );
+
+const NotFound = () => {
+  return (
+    <div className="not-found">
+      <h1>Ooops...</h1>
+      <h2>That page cannot be found
+      </h2>
+      <p>Go back to the <Link href="/">Homepage</Link></p>
+    </div>
+  );
 }
  
-export default Notfound;
+export default NotFound;
