@@ -11,14 +11,14 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+     
       <h1>Hello world </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel tellus vitae ex tempor dapibus quis feugiat dolor. Proin at pulvinar lorem. Nunc at sapien iaculis, hendrerit quam eu, luctus mauris. Aenean faucibus justo nisi. Quisque eu lobortis ex. Donec pulvinar, est ac facilisis malesuada, velit diam lobortis dui,</p>
 
     <Link href="/txen">
      see Txen listing 
     </Link>
-    <Footer/>
+ 
     </div>
   );
 }
