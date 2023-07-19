@@ -1,14 +1,15 @@
+import Link from 'next/link'
+
 const Navbar = () => {
-    return ( 
+    return (
         <nav>
 <div className="logo"> Txen list</div>
-<a>Home</a>
-<a>About</a>
-<a>Txen List</a>
+<Link href="/">Home</Link>
+<Link href="/about">About</Link>
+<Link href="/txen">Txen List</Link>
 
         </nav>
-        
-     );
+    );
 }
  
 export default Navbar;
