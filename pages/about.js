@@ -1,12 +1,20 @@
-const About = () => {
-    return ( 
-        <div>
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel tellus vitae ex tempor dapibus quis feugiat dolor. Proin at pulvinar lorem. Nunc at sapien iaculis, hendrerit quam eu, luctus mauris. Aenean faucibus justo nisi. Quisque eu lobortis ex. Donec pulvinar, est ac facilisis malesuada, velit diam lobortis dui,</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel tellus vitae ex tempor dapibus quis feugiat dolor. Proin at pulvinar lorem. Nunc at sapien iaculis, hendrerit quam eu, luctus mauris. Aenean faucibus justo nisi. Quisque eu lobortis ex. Donec pulvinar, est ac facilisis malesuada, velit diam lobortis dui,</p>
+import Head from 'next/head'
 
-        </div>
-     );
+const About = () => {
+  return (
+    <>
+      <Head>
+        <title>Txen List | About</title>
+        <meta name="keywords" content="txen"/>
+      </Head>
+      <div>
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
+      </div>
+    </>
+  );
 }
  
 export default About;
