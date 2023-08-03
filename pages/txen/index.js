@@ -3,7 +3,7 @@ const Txen = () => {
     return ( 
         <>
         <Head>
-        <title>Txen List | Home</title>
+        <title>Txen List | Txen</title>
         <meta name="keywords" content="ninjas"/>
       </Head>
         <div>
