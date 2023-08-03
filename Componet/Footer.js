@@ -1,7 +1,7 @@
 const Footer = () => {
     return ( 
         <footer>
-            copyright 2023 Txen List
+            copyright 2023 Txen List kellen
         </footer>
      );
 }
