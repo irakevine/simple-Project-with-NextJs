@@ -1,4 +1,8 @@
 import styles from '../../styles/txen.module.css'
+import Link from 'next/link';
+
+const regexPattern = /some_pattern/;
+
 export const getStaticProps = async() => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
     const data = await res.json();
@@ -11,17 +15,16 @@ export const getStaticProps = async() => {
 const Txens = ({ txens }) => {
     return ( 
         
-        <div>
+        <div>   
             <h1>All Txens</h1>
             {txens.map(txen =>(
-                <div key={txen.id}>
-
-            <a className={styles.single}>
+               
+<Link href={'/txen/' +txen.id } key={txen.id}>
+            <div className={styles.single}>
          <h2>{txen.name}</h2>
-             </a>
-                </div>
-
-            ))}
+             </div>
+            </Link>
+             ))}
         </div>
        
      ); 
