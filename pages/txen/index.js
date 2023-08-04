@@ -12,7 +12,7 @@ const Txens = ({ txens }) => {
     return ( 
         
         <div>
-            <h1>All Txens</h1>
+            <h1 className=''>All Txens</h1>
             {txens.map(txen =>(
                 <div key={txen.id}>
 
