@@ -13,7 +13,7 @@ export const getStaticProps = async () => {
 const Txens = ({ txens }) => {
   return (
     <div>
-      <h1>All Txens</h1>
+      <h1 className={styles.title}>All Txens</h1>
       {txens.map((txen) => (
         <Link href={"/txen/" + txen.id} key={txen.id}>
           <div className={styles.single}>

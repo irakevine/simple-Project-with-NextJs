@@ -1,3 +1,8 @@
+.title {
+  color: #333;
+  padding-bottom: 20px;
+  text-align: center;
+}
 .single {
     padding: 2px 16px;
     background: aliceblue ;
