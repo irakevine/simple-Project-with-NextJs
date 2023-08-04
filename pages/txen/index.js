@@ -1,16 +1,29 @@
-import Head from "next/head";
-const Txen = () => {
+
+export const getStaticProps = async() => {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await res.json();
+    
+    return{
+        props : {  txens: data   }
+    }
+}
+
+const Txens = ({ txens }) => {
     return ( 
-        <>
-        <Head>
-        <title>Txen List | Txen</title>
-        <meta name="keywords" content="ninjas"/>
-      </Head>
+        
         <div>
-            <h1>All Txen</h1>
+            <h1>All Txens</h1>
+            {txens.map(txen =>(
+                <div key={txen.id}>
+
+         <h2>{txen.name}</h2>
+          
+                </div>
+
+            ))}
         </div>
-        </>
-     );
+       
+     ); 
 }
  
-export default Txen;
+export default Txens;
